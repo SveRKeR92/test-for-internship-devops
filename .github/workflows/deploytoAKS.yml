@@ -45,7 +45,7 @@ jobs:
 
       - name: docker build
         run: |
-          docker  -t ${{secrets.REGISTRY_NAME}}.azurecr.io/sverker-test-for-internship:'${{github.sha}}' .
+          docker build -t ${{secrets.REGISTRY_NAME}}.azurecr.io/sverker-test-for-internship:'${{github.sha}}' .
           docker push ${{secrets.REGISTRY_NAME}}.azurecr.io/sverker-test-for-internship:'${{github.sha}}'
 
       - uses: azure/login@v1
