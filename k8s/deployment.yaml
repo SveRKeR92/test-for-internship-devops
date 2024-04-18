@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: sverker-hello-world-container
-          image: devazregistry.azurecr.io/sve-hello-world-dotnet:latest
+          image: devazregistry.azurecr.io/sverker-test-for-internship:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 80
